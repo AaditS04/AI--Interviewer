@@ -1,57 +1,57 @@
 Prepwise – AI-Powered Interview Preparation Platform
-Prepwise is a job interview preparation platform. It enables users to generate mock interviews using AI voice agents, receive feedback, and track progress through a clean, responsive dashboard.
+Prepwise is a job interview preparation platform that enables users to generate mock interviews using AI voice agents, receive structured feedback, and track their progress through a clean, responsive dashboard.
 
-Features
+🚀 Features
 Authentication: Secure email/password authentication using Firebase.
 
-Interview Generator: Create mock interviews tailored to role, experience level, and tech stack.
+Interview Generator: Create mock interviews tailored to job role, experience level, and tech stack.
 
-Voice-based Interviewing: Conduct interviews via AI voice agents using Vapi and Gemini.
+Voice-Based Interviewing: Conduct interviews via AI voice agents using Vapi and Gemini.
 
-AI Feedback: Receive structured, category-wise feedback including strengths and areas for improvement from Gemini.
+AI Feedback: Get structured, category-wise feedback including strengths and areas for improvement from Gemini.
 
-Dashboard: Track and manage your past interviews.
+Dashboard: Track and manage all your past interviews in one place.
 
-Responsive UI: Built with shadcn/ui for a smooth experience on all devices.
+Responsive UI: Built with shadcn/ui and TailwindCSS for a smooth and modern experience on all devices.
 
-Tech Stack
+🛠 Tech Stack
 Next.js – Frontend & backend logic
 
-Firebase – Auth and database
+Firebase – Authentication and database
 
-TailwindCSS – Styling
+TailwindCSS – Utility-first CSS framework
 
-Vapi AI – Voice AI agents
+Vapi AI – Voice-based AI agents
 
-Google Gemini – Question generation and feedback
+Google Gemini – Used for question generation and feedback analysis
 
-shadcn/ui – UI components
+shadcn/ui – Component library for clean, accessible UI
 
-
-Run Locally with
+🧪 Running Locally
+Make sure you have all environment variables configured properly, then run:
 
 npm run dev
+The application will be available at http://localhost:3000.
 
-Gemini Prompts
+🧠 Gemini Prompts
+📋 Question Generation Prompt
 
-Question Generation Prompt
-
-Prepare questions for a job interview.
-The job role is ${role}.
-The experience level is ${level}.
-Tech stack: ${techstack}.
-Focus: ${type}.
-Number of questions: ${amount}.
+Prepare questions for a job interview. 
+The job role is {role}. 
+The experience level is {level}. 
+Tech stack: {techstack}. 
+Focus: {type}. 
+Number of questions: {amount}. 
 Format: ["Question 1", "Question 2", "Question 3"]
+📝 Feedback Generation Prompt
 
-Feedback Generation Prompt
+You are an AI interviewer analyzing a mock interview. 
+Score the candidate from 0 to 100 in the following categories:
 
-You are an AI interviewer analyzing a mock interview.
-Score the candidate from 0 to 100 in these categories:
 - Communication Skills
 - Technical Knowledge
 - Problem-Solving
 - Cultural & Role Fit
 - Confidence & Clarity
-Provide detailed feedback, strengths, and areas for improvement.
 
+Provide detailed feedback, strengths, and areas for improvement.
